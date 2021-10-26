@@ -28,7 +28,7 @@ class SignIn : AppCompatActivity() {
             val num = etSavedNum.text.toString()
             val password = etSavedPw.text.toString()
 
-          val pw =  dbH.checkpassword(password)
+          val pw =  dbH.checkpassword(num)
 
             if(pw.equals(password)){
                 val intent = Intent(applicationContext, Details::class.java)
